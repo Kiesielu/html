@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test2</title>
+</head>
+<body>
+	<ul>
+		<!-- można użyć <ul type="..."> square, circle lub niczego -->
+		<!-- Square-kwadrat, circe okrąg, brak-koło-->
+		<!-- aby wypunktować należy użyć znaku ol. Można dodać type="..." i, I, A, a-->
+		<!-- i- rzymskie małe, I-rzymskie duże, A- Abc z dużej, a-abc z małej-->
+		<!-- (ol) start="3", rozpocznie nam punktowanie od 3-->
+
+		<li>Punkt A</li>
+			<ul>
+				<li>Punkt A.1</li>
+					<ol>
+						<li>PunktA.1.1</li>
+						<li>PunktA.1.2</li>
+						<li>PunktA.1.3</li>
+					</ol>
+				<li>Punkt A.2</li>
+				<li>Punkt A.3</li>
+			<!-- aby zrobić podpunkt należy w trakcie punktów znów użyć ul i li-->
+			</ul>
+		<li>Punkt B</li>
+		<li>Punkt C</li>
+		<!--dodająć do <li> (punkt), value="..." wybrany punkt ma określony po nas numer a następne punkty mają kolejne cyfry-->
+	</ul>
+
+
+<table border="3" cellpadding="10" cellspacing="15">
+	<!--border='...' dodaje ramkę-->
+	<!-- cellpadding (obramowanie wewnętrzne) odstęp od obramowania do tekstu-->
+	<!-- cellspacing (obramowanie zewnętrzne) odstęp komórek od siebie-->
+	<tr>
+		<th>Komórka 1</th>
+		<!-- th pogrubia-->
+		<td>Komórka 2</td>
+	</tr>
+	<tr>
+		<th>Komórka 3</th>
+		<td>Komórka 4</td>
+	</tr>
+<!-- table->tr(stworzenie wiersza)->td(komórki/wiersze)-->
+</table>
+
+<table border="3" cellpadding="10" cellspacing="15" width="50%" height="500">
+	<!-- width poszerza lub zwęrza tabelę height nie podaję się w %, określa wsokość tabeli-->
+
+	<caption>Tabela 1</caption>
+	<!-- capition taje tytuł tabeli-->
+	<tr>
+		<td>Komórka 1</td>
+		<td>Komórka 2</td>
+	</tr>
+	<tr>
+		<td>Komórka 3</td>
+		<td>Komórka 4</td>
+	</tr>
+</table>
+
+<table border="3" cellpadding="10" cellspacing="15">
+	<caption>Tabela 1</caption>
+	<tr>
+		<td width="200">Komórka 1</td>
+		<!-- zmieniając wysokość jednek komórki automatycznie zmieni sie wysokość komórki obok, tak samo z wysokością-->
+		<td>Komórka 2</td>
+	</tr>
+	<tr>
+		<td>Komórka 3</td>
+		<td>Komórka 4</td>
+	</tr>
+</table>
+
+<table border="3" bordercolor="red" cellpadding="10" cellspacing="15" bgcolor="blue">
+	<!--bordercolor zmienia kolor tabeli-->
+	<!-- bgcolor wypełnia ramkę kolorem-->
+
+	<caption>Tabela 1</caption>
+	<tr>
+		<td bgcolor="red">Komórka 1</td>
+		<td>Komórka 2</td>
+	</tr>
+	<tr>
+		<td>Komórka 3</td>
+		<td>Komórka 4</td>
+	</tr>
+</table>
+
+<table border="3" cellpadding="10" cellspacing="15">
+	<caption>Tabela 1</caption>
+	<tr>
+		<td>Komórka 1</td>
+		<td>Komórka 2</td>
+	</tr>
+	<tr>
+		<td>Komórka 3</td>
+		<td>Komórka 4</td>
+	</tr>
+</table>
+
+<table border="3" cellpadding="10" cellspacing="15">
+	<caption>Tabela 1</caption>
+	<tr>
+		<td rowspan="2">Komórka 1</td>
+		<td>komórka 2</td>
+		<!--scalenie komórek poprzez colspan i dodaniu ile komórek scalamy i usuwamy 2 komórkę a rowspan scala tabele w dół-->
+	</tr>
+	<tr>
+		<td>Komórka 4</td>
+	</tr>
+</table>
+
+<table border="3" cellpadding="10" cellspacing="15">
+	<caption>Tabela 1</caption>
+	<tr>
+		<td width="200" align="center" align="top" height="200">Komórka 1</td>
+		<!-- wyrównanie do środka poprzez align i dodanie center (do prawej-right)-->
+		<!-- algin bottom obniża tekst w dół a top w górę-->
+		<!-- ALE NIE DZIAŁA :))-->
+		<td>Komórka 2</td>
+	</tr>
+	<tr>
+		<td>Komórka 3</td>
+		<td>Komórka 4</td>
+	</tr>
+</table>
+</body>
+</html>
